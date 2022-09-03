@@ -1,0 +1,55 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the README at:
+// https://github.com/microsoft/vscode-dev-containers/tree/v0.245.2/containers/alpine
+{
+	"name": "Alpine",
+	"build": {
+		"dockerfile": "Dockerfile",
+		// Update 'VARIANT' to pick an Alpine version: 3.13, 3.14, 3.15, 3.16
+		"args": { "VARIANT": "3.16" }
+	},
+
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	// "forwardPorts": [],
+
+	// Use 'postCreateCommand' to run commands after the container is created.
+	// "postCreateCommand": "uname -a",
+
+	// Replace when using a ptrace-based debugger like C++, Go, and Rust
+	// "runArgs": [ "--init", "--cap-add=SYS_PTRACE", "--security-opt", "seccomp=unconfined" ],
+
+	// Comment out to connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
+	"remoteUser": "vscode",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"brapifra.phpserver",
+				"small.php-ci",
+				"PrimaFuture.open-php-html-js-in-browser",
+				"xdebug.php-debug",
+				"bmewburn.vscode-intelephense-client",
+				"xdebug.php-pack",
+				"zobo.php-intellisense",
+				"rifi2k.format-html-in-php",
+				"neilbrayfield.php-docblocker",
+				"MehediDracula.php-namespace-resolver",
+				"kokororin.vscode-phpfmt",
+				"phproberto.vscode-php-getters-setters",
+				"linyang95.php-symbols",
+				"Renan-MsV.ac3d-syntax",
+				"ms-vscode.cpptools",
+				"googlecloudtools.cloudcode",
+				"formulahendry.code-runner",
+				"firefox-devtools.vscode-firefox-debug",
+				"ms-azuretools.vscode-docker",
+				"docsmsft.docs-images",
+				"dbaeumer.vscode-eslint",
+				"MixusMinimax.false",
+				"Wscats.qf",
+				"MS-CEINTL.vscode-language-pack-fr",
+				"donjayamanne.githistory",
+				"felipecaputo.git-project-manager",
+				"GitHub.vscode-pull-request-github"
+			]
+		}
+	}
+}
